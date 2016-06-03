@@ -32,7 +32,7 @@ app.get('/todos/:id', function(req, res) {
 	// Iterate over todos array. Find the match.
 	todos.forEach(function(todo) {
 		if(todoId === todo.id) {
-			matchedTodo = todoId;
+			matchedTodo = todo;
 		}
 	});
 
